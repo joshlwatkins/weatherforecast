@@ -1,3 +1,5 @@
+#Program that uses Beautiful Soup to scrape the current weather forcast for a City, State from Google
+
 from bs4 import BeautifulSoup
 import requests
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3'}
@@ -16,6 +18,6 @@ def weather(city):
     print(info)
     print(weather+"°F")
 
-city=input("Enter the Name of Any City >>  ")
+city=input("Enter the Name of Any City,State: Example - Phoenix, AZ >>  ")
 city=city+" weather"
 weather(city)
